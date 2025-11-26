@@ -75,6 +75,17 @@ class ConfigLoader:
                 return default
         return value
 
+from pydantic_settings import BaseSettings
+
+class Settings(BaseSettings):
+    # existing fields...
+    supabase_url: str
+    supabase_service_role_key: str
+
+    class Config:
+        env_prefix = ""  # or whatever you already use
+        case_sensitive = False
+
 
 # Global settings instance
 settings = Settings()
