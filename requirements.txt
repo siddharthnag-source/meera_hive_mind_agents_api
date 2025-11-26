@@ -8,6 +8,7 @@ python-dotenv>=1.0.0
 pydantic>=2.5.0
 pydantic-settings>=2.1.0
 pyyaml>=6.0.1
+psycopg[binary,pool]==3.2.1
 
 # Utilities
 numpy>=1.24.0
